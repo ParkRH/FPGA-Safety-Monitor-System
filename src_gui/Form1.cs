@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.IO.Ports; // [중요] 시리얼 통신을 위해 필요
+using System.IO.Ports; //
 
-namespace FpgaGuiController // <-- 본인 프로젝트 이름인지 확인!
+namespace FpgaGuiController // 
 {
     public partial class Form1 : Form
     {
@@ -18,7 +18,7 @@ namespace FpgaGuiController // <-- 본인 프로젝트 이름인지 확인!
             cboPort.Items.AddRange(ports);              // 콤보박스에 넣기
             if (ports.Length > 0) cboPort.SelectedIndex = 0; // 첫 번째꺼 선택
 
-            serialPort1.BaudRate = 9600; // FPGA(MicroBlaze)와 속도 맞추기!
+            serialPort1.BaudRate = 9600; // FPGA(MicroBlaze)와 속도 맞추기
 
             // 데이터 수신 이벤트 연결 (FPGA가 말하면 듣기 위해)
             serialPort1.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
@@ -93,4 +93,5 @@ namespace FpgaGuiController // <-- 본인 프로젝트 이름인지 확인!
 
         }
     }
+
 }
