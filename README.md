@@ -18,7 +18,8 @@ PC(GUI)에서 입력된 명령을 UART 통신으로 수신하여, FPGA가 실시
 ## 2. 시스템 아키텍처 (SoC Block Design)
 MicroBlaze 소프트 코어 프로세서를 중심으로, AXI4-Lite 버스를 통해 통신 및 제어 모듈을 통합한 SoC(System on Chip) 구조입니다.
 
-![System Architecture](./src_hw/design_1.PNG)
+<img width="737" height="189" alt="design_1" src="https://github.com/user-attachments/assets/6e772a65-9910-45c5-a788-2bdd3d340871" />
+
 * **MicroBlaze:** 시스템 메인 컨트롤러 및 데이터 라우팅
 * **AXI UARTLite:** PC(C# GUI)와의 RS-232 직렬 통신 (Baud: 9600)
 * **Custom IP (Safety Monitor):** 안전 등급 판정 및 7-Segment 다이나믹 구동(Multiplexing)을 담당하는 Verilog 로직
