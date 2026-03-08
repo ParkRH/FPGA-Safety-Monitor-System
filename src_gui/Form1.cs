@@ -81,7 +81,7 @@ namespace FpgaGuiController //
             catch { }
         }
 
-        // (편의 기능) 로그창에 글씨 쓰기
+        // 로그창에 글씨 쓰기
         private void Log(string msg)
         {
             txtLog.AppendText(msg + "\r\n");
@@ -95,4 +95,5 @@ namespace FpgaGuiController //
     }
 
 }
+
 
