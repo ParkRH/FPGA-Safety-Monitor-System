@@ -73,7 +73,7 @@ namespace FpgaGuiController //
             {
                 string data = serialPort1.ReadExisting(); // 데이터 읽기
 
-                // UI 스레드 충돌 방지 (필수!)
+                // UI 스레드 충돌 방지 
                 this.Invoke(new Action(() => {
                     Log("받음: " + data);
                 }));
@@ -95,3 +95,4 @@ namespace FpgaGuiController //
     }
 
 }
+
